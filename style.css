@@ -50,27 +50,13 @@
               width: 100%;
               height: 300px;
           }
+          }
           /* Плавная прокрутка для всего сайта */
 html {
   scroll-behavior: smooth;
 }
 
-/* Стили кнопки */
-.top-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  z-index: 1000; /* Чтобы была поверх других элементов */
-}
 
-.top-button:hover {
-  background-color: #555;
-}
 
  a {
      color: #FFFFFF;
@@ -81,15 +67,8 @@ html {
   color: #FFDB36; /* Changes text color  when hovered */
 
 }
- .link-1 { color: black; text-decoration: none; font-weight: bold; text-decoration: underline; display: inline-block;   border-radius: 5px; background-color: #07376E;  color: white; padding: 5px 10px;   }
 
-.link-1:hover { color: #FFDB36; font-weight: bold; text-decoration: underline; background-color: #07376E;} /* Стилизация при наведении [7] */
 
-.vol {
-    font: bold 40px Georgia, sans-serif;
-    color: #E7F9FE;;
-    text-shadow: 3px 5px 1px #333, -1px -1px 0 #FF5447;
-}
 H1 {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     color: #EEE6D2;
@@ -100,14 +79,25 @@ H1 {
     object-fit: cover; width: 200px; height: 200px; border-radius: 50%;
      overflow: hidden; /* Обрезает все, что выходит за круг */
    }
-   .mobile-link {
-    display: inline-block;
-    padding: 10px 10px; /* Крупная зона нажатия */
-    font-size: 18px;
-    text-decoration: none;
-    background-color: #000000;
-    color: white;
-    border-radius: 5px;
-  }
-    .mobile-link:hover { color: #FFDB36;  text-decoration: underline; background-color: #07376E;} /* Стилизация при наведении [7] */
-        }
+
+
+         .my-button {
+    display: inline-block;                /* Кнопка ведет себя как блочная, но по размеру текста */
+    padding: 12px 24px;                  /* Отступы, одинаковые везде */
+    background-color: #07376E;           /* Цвет фона */
+    color: #ffffff;                      /* Цвет текста */
+    text-decoration: none;               /* Убираем подчеркивание у ссылки */
+    border-radius: 8px;                  /* Скругление углов */
+    font-family:Georgia, sans-serif;
+    font-size: 16px;                     /* Одинаковый размер шрифта */
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;   /* Плавный эффект при наведении */
+    box-sizing: border-box;              /* Учитываем padding внутри ширины */
+}
+
+/* Эффекты при наведении (десктоп) */
+.my-button:hover {
+    background-color: #0056b3;
+    color: #FFDB36;
+}
