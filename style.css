@@ -76,7 +76,7 @@ H1 {
 }
 .round {
     border-radius: 50%;
-    object-fit: cover; width: 200px; height: 200px; border-radius: 50%;
+  /*  object-fit: cover; width: 200px; height: 200px; border-radius: 50%;   */
      overflow: hidden; /* Обрезает все, что выходит за круг */
    }
 
@@ -100,4 +100,50 @@ H1 {
 .my-button:hover {
     background-color: #0056b3;
     color: #FFDB36;
+}
+/* Базовые стили для десктопа */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.block {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Стили для адаптивных картинок */
+.block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+  margin-bottom: 12px; /* Зазор между картинкой и текстом снизу */
+  overflow: hidden; /* Обрезает все, что выходит за круг */
+   box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+
+/* Стили для текста */
+.block p {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Мобильная версия (экраны до 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Блоки встают вертикально */
+    gap: 25px;              /* Чуть увеличиваем зазор между самими блоками на мобильном */
+  }
+
+  .block {
+    text-align: center;     /* Текст гарантированно центрируется под картинкой */
+  }
 }
