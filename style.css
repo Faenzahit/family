@@ -1,15 +1,15 @@
  body {
             margin: 0;
-          /*  font-family: Arial, sans-serif; */
+
             line-height: 1.6;
              font-family:  Georgia, serif;
         word-wrap: break-word;       /* Перенос длинных слов */
         overflow-x: hidden;          /* Убираем горизонтальный скролл */
-        /*font-size: clamp(14px, 2vw, 20px);*/ /* Плавный размер текста */
+
         line-height: 1.5;
         font-size:  1.1em;
        background-image: url(images/fonb.jpg) ;
-       /* background-color:  #5CA3F5;   */
+     
         }
         header, footer {
             background-image:  url(images/fonh.jpg);
